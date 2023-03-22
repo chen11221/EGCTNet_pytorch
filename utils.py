@@ -24,7 +24,7 @@ def get_loader(data_name, img_size=256, batch_size=8, split='test',
 
     shuffle = is_train
     dataloader = DataLoader(data_set, batch_size=batch_size,
-                                 shuffle=shuffle, num_workers=4)
+                                 shuffle=shuffle, num_workers=0)
 
     return dataloader
 
